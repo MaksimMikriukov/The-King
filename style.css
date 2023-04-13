@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@300;400;500;600&display=swap');
+
+body, html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+* {
+    font-family: 'Bitter', serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-size: 48px;
+    font-weight: 400;
+}
+h2{
+    font-size: 20px;
+    font-weight: 600;
+}
+h3{
+    font-size: 16px;
+    font-weight: 500;
+}
+h4{
+    font-size: 24px;
+    font-weight: 400;
+}
+a {
+    font-size: 20px;
+    font-weight: 300;
+}
+/* бэк черный */
+.back{
+    display: flex;
+    width: 100%;
+    background-color: black;
+    height: 505px;
+    position: absolute;
+    margin-top: 170px;
+}
+/*НАВИГАЦИЯ*/
+header nav {
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    opacity: 0.7;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index:2;
+}
+header nav ul{
+    display: flex;
+    gap: 0px 45px;
+    list-style: none;
+    justify-content: center;
+    margin: 25px 0px 25px 0px;
+    z-index: 1;
+    opacity: unset;
+}
+header nav ul li a {
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+}
+/*ЛОГО*/
+.label{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-top: 330px;
+    padding-left: 300px;
+}
+.container{
+
+}
+.label a{
+    font-family: "Adobe Myungjo Std M";
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.the{
+    font-size: 64px;
+    padding-left: 50px;
+}
+.king{
+    position: relative;
+    top: -80px;
+    font-size: 128px;
+    padding-left: 50px;
+}
+.underlabel{
+    position: relative;
+    top: -140px;
+    font-size: 24px;
+}
+/*ТУРНИРЫ*/
+.tournaments{
+    display: flex;
+    justify-content: center;
+}
+.disflex{
+    height: 800px;
+}
+.decorations{
+    position: relative;
+    top: -190px;
+
+}
+
+.decorations img{
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;}
+.chess_deck{
+    position: absolute;
+    left: 50px;
+    top: 570px;
+}
+.text{
+    padding-top: 45px;
+    color: white;
+    top: -750px;
+    position: relative;
+    height: 505px;
+    width: 100%;
+    margin-left: 300px;
+}
+.text h1{
+    margin-bottom: 75px;
+}
+.text_a a{
+    line-height: 2.8;
+}
+.text_a{
+    margin-left: 150px;
+}
+/*КОМАНДА*/
+.team{
+    display: flex;
+    justify-content: center;
+
+    padding-top: 100px;
+}
+.team h1{
+   margin-right: 200px;
+    margin-bottom: 100px;
+    text-align: right;
+}
+.team_disblock{
+    display: block;
+
+}
+.team_container{
+    display: flex;
+    gap: 0px 70px;
+
+}
+.team_person{
+    width: 290px;
+
+}
+.team_person h4{
+    margin: 16px 0px 16px 0px;
+
+}
+.team_person a{
+    font-size: 16px;
+}
+/* ДОСТИЖЕНИЯ */
+.achievements{
+    display: flex;
+    justify-content: center;
+}
+.achievements .disflex .decorations{
+    position: relative;
+    top: 125px;
+}
+.achievements .disflex .text{
+    top: -450px;
+}
+.achievements .chess_deck{
+    top: 250px;
+    left: 100px;
+}
+/* ПРИСОЕДЕНИТСЯ */
+.join{
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+
+}
+.join h1{
+    padding-left: 300px;
+}
+.forma{
+    display: block;
+    width: 418.74px;
+    height: 512px;
+    background: #FFFFFF;
+    border: 3px solid #000000;
+    border-radius: 100px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.forma div{
+    margin-top: 90px;
+}
+.forma input{
+    padding-left: 30px;
+    width: 339.62px;
+    height: 56.75px;
+    background: #000000;
+    border-radius: 50px;
+    margin: 15px 35px;
+    font-family: 'Bitter';
+    font-style: normal;
+    border: 2px solid black;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+}
+::placeholder { 
+    color: rgb(255, 255, 255);
+  }
+.forma button{
+    width: 225.86px;
+    height: 56.75px; 
+    background: #FFFFFF;
+    border: 3px solid #000000;
+    border-radius: 50px;
+    font-family: 'Bitter';
+    font-style: normal;
+    
+    font-weight: 600;
+    font-size: 24px;
+    color: #000000;
+    margin: 50px 95px 0px 95px; 
+}
+button:hover{
+    transition: 0.5s;
+    transform: scale(1.03);
+}
+button:active{
+    transition: 0.5s;
+    transform: translateY(5px);
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* ФУТЕР */
+footer{
+
+    width: 100%;
+    background-color: black;
+    padding-top: 120px;
+    padding-bottom: 30px;
+    margin-top: 170px; 
+}
+.contacts{
+    width: 1250px;
+    margin-inline: auto;
+}
+.contacts div{
+  margin: 0 auto;
+}
+.contacts a{
+    color: #FFFFFF;
+   
+}
+.xss{
+    display: flex;
+    padding-left: 550px;
+    padding-bottom: 70px;
+    gap: 40px;
+}
+.xxxxl{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+@font-face {
+font-family: "Adobe Myungjo Std M";
+src: url("./fonts/Adobe Myungjo Std M.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+}
